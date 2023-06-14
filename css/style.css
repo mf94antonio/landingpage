@@ -13,6 +13,10 @@
     box-sizing: border-box;
 }
 
+body {
+    padding-bottom: 500px;
+}
+
 /* Event form */
 #event-description{
     background: linear-gradient(rgb(0,0,0,.8), rgb(0,0,0,.8)),
@@ -92,6 +96,97 @@
 }
 .btn:hover {
     opacity: 1;
+}
+
+/*Benefits section*/
+#key-benefits h2 {
+    background-color: var(--secondary);
+    text-align: center;
+    padding: 2em;
+    font-weight: 500px;
+}
+
+.benefits {
+    display: flex;
+    justify-content: space-around;
+    padding: 4em;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.benefit {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20%;
+    color: var(--text-tertiary);
+}
+
+.benefit .benefit-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1em;
+}
+
+#benefit-1 {
+    background-image: url(../img/1.jpg);
+}
+
+#benefit-2 {
+    background-image: url(../img/2.jpg);
+}
+
+#benefit-3 {
+    background-image: url(../img/3.jpg);
+}
+
+/* Event location*/
+#location {
+    background: linear-gradient(rgb(0,0,0,.8), rgb(0,0,0,.8)),
+    url(../img/persianacapa.jpeg);
+   background-position: center;
+   background-size: cover;
+   height: 400px;  
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   color: var(--text-color);
+   margin-bottom: 3em;
+}
+
+#adress,
+#about-location {
+    max-width: 30%;
+}
+
+#address {
+    display: flex;
+}
+
+#address i {
+    color: var(--primary);
+    font-size: 4em;
+    margin-right: 0.5em;
+}
+
+#address-details {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+#about-location h3 {
+    color: var(--primary);
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+#about-location p {
+    line-height: 1.5em;
 }
 
 
