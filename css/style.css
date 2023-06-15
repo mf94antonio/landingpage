@@ -30,17 +30,17 @@ body {
     color: var(--text-color)
 }
 
-#disclainer h2,
-#disclainer .event-date {
+#disclaimer h2,
+#disclaimer .event-date {
     color: var(--primary);
 }
 
-#disclainer h2 {
+#disclaimer h2 {
     font-size: 3em;
     margin-bottom: 1em;
 }
 
-#disclainer .about-event {
+#disclaimer .about-event {
     font-size: 2em;
     text-transform: uppercase;
     max-width: 350px;
@@ -48,7 +48,7 @@ body {
     margin-bottom: 1em;
 }
 
-#disclainer p {
+#disclaimer p {
     font-size: 1.2em;
     margin-bottom: 0.3em;
 }
@@ -190,3 +190,60 @@ body {
 }
 
 
+
+
+
+
+
+/* Responsividade*/
+@media (max-width: 450px){
+
+    #event-description{
+        height: auto;
+        flex-direction: column;
+    }
+
+    #disclaimer  {
+    padding: 2em;
+    }
+
+    #subscription-form {
+        max-width: 70%;
+        margin-bottom: 2em;
+    }
+
+    .benefits {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 2em;
+        width: auto;
+    }
+  /* Localização*/
+    #location {
+        flex-direction: column;
+        padding: 2em;
+        text-align: center;
+       height: auto;
+    }
+
+    #address {
+        order: 2;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    #about-location p {
+     display: none;
+    }
+
+    #about-location h3 {
+        display: flex;
+        justify-content: center;
+    }
+
+    
+
+
+
+}
