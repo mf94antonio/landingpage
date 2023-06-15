@@ -201,6 +201,7 @@ body {
     #event-description{
         height: auto;
         flex-direction: column;
+        text-align: center;
     }
 
     #disclaimer  {
